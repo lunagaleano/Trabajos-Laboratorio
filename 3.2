@@ -1,0 +1,15 @@
+'''Escribe un programa que pida al usuario que ingrese una cadena de texto
+y luego cuente cuántas veces aparece una letra específica en la cadena.'''
+
+texto = input("Ingrese una palabra o frase: ")
+letra = input("Ingrese la letra que desea buscar: ")
+
+contador = 0
+i = 0
+
+while i < len(texto):
+    if texto[i] == letra:
+        contador = contador + 1
+    i = i + 1
+
+print("La letra aparece", contador, "veces.")

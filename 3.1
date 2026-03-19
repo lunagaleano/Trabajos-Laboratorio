@@ -1,0 +1,17 @@
+'''Escribe un programa que pida al usuario que adivine un número secreto generado
+aleatoriamente. El programa debe dar pistas al usuario diciéndole si el número
+ingresado es mayor o menor que el número secreto.'''
+
+numero_secreto = 50
+intento = 0
+
+while intento != numero_secreto:
+    intento = int(input("Adivina el número entre 1 y 100: "))
+
+    if intento < numero_secreto:
+        print("El numero es mayor")
+        
+    elif intento > numero_secreto:
+        print("El numero es menor")
+
+print("Correcto")

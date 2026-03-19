@@ -1,0 +1,18 @@
+'''Escribe un programa que lea un arreglo de números enteros y
+luego muestre cuántos elementos del arreglo son pares.'''
+
+numeros = []
+
+n = int(input("¿Cuantos numeros desea ingresar?: "))
+
+for i in range(n):
+    num = int(input("Ingrese un numero: "))
+    numeros.append(num)
+
+pares = 0
+
+for num in numeros:
+    if num % 2 == 0:
+        pares = pares + 1
+
+print("Cantidad de numeros pares:", pares)

@@ -1,0 +1,18 @@
+'''Escribe un programa que lea un arreglo de números enteros y
+luego muestre la media (promedio) de los elementos del arreglo.'''
+
+numeros = []
+
+n = int(input("¿Cuantos numeros desea ingresar?: "))
+
+for i in range(n):
+    num = int(input("Ingrese un numero: "))
+    numeros.append(num)
+
+suma = 0
+for num in numeros:
+    suma = suma + num
+
+promedio = suma / n
+
+print("El promedio es:", promedio)
